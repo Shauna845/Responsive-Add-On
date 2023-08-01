@@ -1,0 +1,9 @@
+:root {
+  --branding-color: #53a8b6;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+  --front-page-hero-color: #fcfefe;
+}
+body {
+  font-family: var(--default-font-family);
+}
