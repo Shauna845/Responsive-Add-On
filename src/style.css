@@ -52,6 +52,34 @@ header a {
   display: inline-block;
   margin-top: 32px;
 }
+main {
+  background-color: white;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+main p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
 footer {
   display: block;
   color: white;
@@ -62,16 +90,24 @@ footer {
     url("/images/Wellington-top-Mount-Victoria-New-Zealand.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 100px;
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.img-responsive {
+  width: 100%;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 footer h3 {
   font-weight: 700;
@@ -97,7 +133,7 @@ footer a {
   opacity: 0.7;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 900px) {
   header {
     padding: 60px 0;
   }
@@ -109,5 +145,15 @@ footer a {
   }
   header h3 {
     font-size: 16px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
+  }
+  footer {
+    padding: 60px 0;
   }
 }
