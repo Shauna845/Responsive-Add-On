@@ -161,6 +161,12 @@ section.secondary {
   background-color: #462cb3;
   text-decoration: none;
 }
+.gallery-photos {
+  margin: 30px 0;
+}
+.gallery-photos .grid {
+  grid-gap: 20px;
+}
 footer {
   display: block;
   color: white;
