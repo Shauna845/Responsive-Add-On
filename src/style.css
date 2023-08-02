@@ -1,10 +1,10 @@
 :root {
-  --branding-color: #53a8b6;
+  --branding-color: #272044;
   --default-font-family: "Poppins", sans-serif;
 }
 body {
   font-family: var(--default-font-family);
-  background-color: #272044;
+  background-color: var(--branding-color);
 }
 container {
   max-width: 1400px;
@@ -60,7 +60,7 @@ main h2 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 5px;
-  color: #272044;
+  color: var(--branding-color);
   opacity: 0.3;
   text-transform: uppercase;
   margin: 0;
@@ -69,7 +69,7 @@ main h3 {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.5;
-  color: #272044;
+  color: var(--branding-color);
   margin: 0;
 }
 main p {
@@ -77,8 +77,81 @@ main p {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  color: #272044;
+  color: var(--branding-color);
   opacity: 0.7;
+}
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+section.secondary {
+  background-color: #f8f8f8f8;
+}
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-columns-footer {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.card {
+  background-color: white;
+  margin: 30px 0;
+  border: none;
+}
+.card-header {
+  border: none;
+  background-color: white;
+}
+.card-body {
+  padding: 30px;
+  background-color: white;
+  box-sizing: none;
+  border: none;
+}
+.card-footer {
+  padding: 30px;
+  background-color: white;
+  box-sizing: none;
+  border: none;
+}
+.card h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--branding-color);
+  margin: 0;
+}
+.card h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--branding-color);
+  margin: 0;
+}
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
 }
 footer {
   display: block;
@@ -90,24 +163,6 @@ footer {
     url("/images/Wellington-top-Mount-Victoria-New-Zealand.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 100px;
-}
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
-}
-.img-responsive {
-  width: 100%;
-}
-.grid-3-columns {
-  grid-template-columns: 1fr 2fr 2fr;
 }
 footer h3 {
   font-weight: 700;
