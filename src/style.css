@@ -71,7 +71,7 @@ section {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 20px;
+  grid-gap: 64px;
 }
 footer h3 {
   font-weight: 700;
